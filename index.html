@@ -8,9 +8,9 @@
       function countdown() {
     time = parseInt(localStorage.time);
 
-    if (isNaN(time) || time > (7)) {
+    if (isNaN(time) || time > (1*7)) {
         alert("An error occured: time left variable is corrupted, resetting timer");
-        localStorage.time = 7;
+        localStorage.time = 1 * 7;
         countdown();
         return null;
     }
